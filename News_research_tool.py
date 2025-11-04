@@ -24,9 +24,9 @@ nltk.download('punkt')
 nltk.download('stopwords')
 
 # === API Keys ===
-NEWS_API_KEY = "977ae5dcda884bcd81e33fcdaff53144"
-GOOGLE_API_KEY = "AIzaSyDG-R8LJjnCtOxA0lCweZdo1Oos5u7AMb0"
-GOOGLE_CSE_ID = "52b0feb1ebb9f4261"
+NEWS_API_KEY = "977ae5dcda884bcd8*************8*"
+GOOGLE_API_KEY = "AIzaSyDG-R8LJjnCt***********8"
+GOOGLE_CSE_ID = "52b0feb1eb*******"
 
 # === Models ===
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
@@ -240,3 +240,4 @@ elif option == "Upload Document":
                 st.subheader("📝 Summary")
                 summary = summarize_text(content, max_words=200)
                 st.write(summary)
+
