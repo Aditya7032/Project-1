@@ -234,10 +234,11 @@ elif option == "Upload Document":
                 content = uploaded_file.read().decode("utf-8")
 
             if content:
-                st.subheader("📄 Extracted Text")
+                st.subheader("Extracted Text")
                 st.text_area("Extracted Content", content[:5000], height=250)
 
-                st.subheader("📝 Summary")
+                st.subheader("Summary")
                 summary = summarize_text(content, max_words=200)
                 st.write(summary)
+
 
